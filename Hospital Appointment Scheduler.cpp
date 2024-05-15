@@ -16,9 +16,9 @@ void deleteAppointment(vector<Appointment>& appointments);
 
 int main() {
     vector<Appointment> appointments;
+    char choice = '0';
 
-    char choice;
-    do {
+    while (choice != '5') {
         // Display menu
         cout << "\nHospital Appointment Scheduler\n";
         cout << "1. Display Appointments\n";
@@ -30,26 +30,21 @@ int main() {
         cin >> choice;
         cin.ignore(); // Ignore the newline character left in the buffer
 
-        switch (choice) {
-            case '1':
-                displayAppointments(appointments);
-                break;
-            case '2':
-                addAppointment(appointments);
-                break;
-            case '3':
-                updateAppointment(appointments);
-                break;
-            case '4':
-                deleteAppointment(appointments);
-                break;
-            case '5':
-                cout << "Exiting program...\n";
-                break;
-            default:
-                cout << "Invalid choice. Please try again.\n";
+        // Process user choice
+        if (choice == '1') {
+            displayAppointments(appointments);
+        } else if (choice == '2') {
+            addAppointment(appointments);
+        } else if (choice == '3') {
+            updateAppointment(appointments);
+        } else if (choice == '4') {
+            deleteAppointment(appointments);
+        } else if (choice == '5') {
+            cout << "Exiting program...\n";
+        } else {
+            cout << "Invalid choice. Please try again.\n";
         }
-    } while (choice != '5');
+    }
 
     return 0;
 }
