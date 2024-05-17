@@ -59,3 +59,5 @@ The Hospital Appointment Scheduler is a software application designed to manage 
 - **Update Appointment**: Modify the details of an existing appointment by specifying its index and providing updated information.
 - **Delete Appointment**: Remove an appointment from the system by specifying its index.
 - **Exit**: Terminate the program and exit the application.
+
+[Presentation's link](https://docs.google.com/file/d/1Ftz3SsTAKwOiWcEmJZV_WwdNsPISN7k6/edit?usp=docslist_api&filetype=mspresentation)
