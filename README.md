@@ -20,6 +20,8 @@ The Hospital Appointment Scheduler is a software application designed to manage 
 - **Struct Appointment**: Defines the attributes of an appointment, such as patient name, appointment date, and doctor's name.
 
 ### Screenshots
+![Project Screenshot](https://github.com/yanniiie/final-proect.cpp/raw/main/photo_2024-05-17_08-48-31.jpg)
+
 
 ### How to Use the Software
 #### Installation and Setup
